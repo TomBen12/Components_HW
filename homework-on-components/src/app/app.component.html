@@ -1,0 +1,5 @@
+<!-- creating input and using ngModel to bind inputText variable to it (two way binding) -->
+<input [(ngModel)] = "inputText" type="text">
+<button>Send</button>
+<!-- inject inputText into childMesssage  -->
+<app-child [childMessage]="inputText"></app-child>
